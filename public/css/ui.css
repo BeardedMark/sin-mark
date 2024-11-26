@@ -1,0 +1,78 @@
+.frame-body{
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-xlg);
+    padding: var(--size-lgr) var(--size-xxl);
+    background-color: var(--color-main);
+}
+
+.frame-section{
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-lgr);
+    padding: var(--size-xlg) ;
+    background-color: var(--color-prime);
+    border: solid 1px var(--color-second);
+    box-shadow: var(--shadow-real-dark);
+}
+
+.frame-card{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-lg);
+    padding: var(--size-lgr) ;
+    background-color: var(--color-other);
+}
+
+.ui-input{
+    color: var(--color-contrast);
+    background-color: var(--color-main);
+    border: solid 1px var(--color-prime);
+    padding: var(--size-xsm);
+}
+
+.ui-input::placeholder{
+    color: var(--color-second);
+}
+
+.ui-input:hover{
+    color: var(--color-contrast);
+    border-color: var(--color-second);
+    padding: var(--size-xsm);
+}
+
+.ui-input:focus{
+    border-color: var(--color-contrast);
+}
+
+.ui-link{
+    text-decoration: none;
+    color: var(--color-contrast);
+    cursor: pointer;
+}
+
+.ui-link:active{
+    color: var(--color-contrast);
+}
+
+.ui-link:hover {
+    color: var(--color-accent);
+}
+
+.ui-btn{
+    padding: var(--size-xsm);
+    text-decoration: none;
+    color: var(--color-contrast);
+    cursor: pointer;
+}
+
+.ui-btn:hover,
+.ui-btn:active {
+    background-color: var(--color-prime);
+    color: var(--color-accent);
+}
+
+.ui-btn:active {
+    border-color: var(--color-contrast);
+}

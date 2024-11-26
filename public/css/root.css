@@ -1,0 +1,135 @@
+:root {
+
+    /* color */
+    --color-accent: #1ABC9C;
+    --color-contrast: #FFFFFF;
+    --color-second: #34495E;
+
+    --color-main: #121212;
+    --color-prime: #1D1F24;
+    --color-other: #15161c;
+
+    --color-brand: #1ABC9C;
+    --color-success: #7DA226;
+    --color-warning: #D99F15;
+    --color-danger: #C34343;
+    --color-info: #2A7DBE;
+
+    /* size */
+
+    --size: 1px;
+    --space-scale: 250;
+    --font-scale: 1;
+    --golden-ratio: 1.6180339887;
+
+    --xxl: calc(var(--space-scale) / var(--golden-ratio));
+    --xlg: calc(var(--xxl) / var(--golden-ratio));
+    --lgr: calc(var(--xlg) / var(--golden-ratio));
+    --lg: calc(var(--lgr) / var(--golden-ratio));
+    --md: calc(var(--lg) / var(--golden-ratio));
+    --sm: calc(var(--md) / var(--golden-ratio));
+    --smr: calc(var(--sm) / var(--golden-ratio));
+    --xsm: calc(var(--smr) / var(--golden-ratio));
+    --xxs: calc(var(--xsm) / var(--golden-ratio));
+
+
+    /* point */
+    
+    /* --xxs: 1;
+    --xsm: 2;
+    --smr: 3;
+    --sm: 5;
+    --md: 13;
+    --lg: 21;
+    --lgr: 34;
+    --xlg: 55;
+    --xxl: 98; */
+
+    /* size */
+    --size-xxs: calc(var(--xxs) * var(--size));
+    --size-xsm: calc(var(--xsm) * var(--size));
+    --size-smr: calc(var(--smr) * var(--size));
+    --size-sm: calc(var(--sm) * var(--size));
+    --size-md: calc(var(--md) * var(--size));
+    --size-lg: calc(var(--lg) * var(--size));
+    --size-lgr: calc(var(--lgr) * var(--size));
+    --size-xlg: calc(var(--xlg) * var(--size));
+    --size-xxl: calc(var(--xxl) * var(--size));
+
+
+    /* font */
+    --font-xxs: calc(9px * var(--font-scale));
+    --font-xsm: calc(10px * var(--font-scale));
+    --font-smr: calc(11px * var(--font-scale));
+    --font-sm: calc(12px * var(--font-scale));
+    --font-md: calc(16px * var(--font-scale));
+    --font-lg: calc(20px * var(--font-scale));
+    --font-lgr: calc(24px * var(--font-scale));
+    --font-xlg: calc(36px * var(--font-scale));
+    --font-xxl: calc(48px * var(--font-scale));
+
+    --shadow-real-light:
+        0px 2.07px 2.21px 0px rgba(46, 60, 80, 0.01),
+        0px 4.98px 5.32px 0px rgba(46, 60, 80, 0.02),
+        0px 9.39px 10.01px 0px rgba(46, 60, 80, 0.03),
+        0px 16.75px 17.86px 0px rgba(46, 60, 80, 0.04),
+        0px 31.33px 33.42px 0px rgba(46, 60, 80, 0.05),
+        0px 75px 80px 0px rgba(46, 60, 80, 0.07);
+
+    --shadow-real-dark:
+        0px 2.07px 2.21px 0px rgba(11, 11, 11, 0.1),
+        0px 4.98px 5.32px 0px rgba(11, 11, 11, 0.2),
+        0px 9.39px 10.01px 0px rgba(11, 11, 11, 0.3),
+        0px 16.75px 17.86px 0px rgba(11, 11, 11, 0.4),
+        0px 31.33px 33.42px 0px rgba(11, 11, 11, 0.5),
+        0px 75px 80px 0px rgba(11, 11, 11, 0.7);
+
+}
+
+@media (min-width: 0px) {
+    :root {
+        /* --size: .5px; */
+        --space-scale: 200;
+        --font-scale: 0.75;
+    }
+}
+
+@media (min-width: 576px) {
+    :root {
+        /* --size: .6px; */
+        --space-scale: 210;
+        --font-scale: 0.8;
+    }
+}
+
+@media (min-width: 768px) {
+    :root {
+        /* --size: .7px; */
+        --space-scale: 220;
+        --font-scale: 0.85;
+    }
+}
+
+@media (min-width: 992px) {
+    :root {
+        /* --size: .8px; */
+        --space-scale: 230;
+        --font-scale: 0.9;
+    }
+}
+
+@media (min-width: 1200px) {
+    :root {
+        /* --size: .9px; */
+        --space-scale: 240;
+        --font-scale: 0.95;
+    }
+}
+
+@media (min-width: 1400px) {
+    :root {
+        /* --size: 1px; */
+        --space-scale: 250;
+        --font-scale: 1;
+    }
+}

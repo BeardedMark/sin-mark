@@ -1,0 +1,178 @@
+.circle-fill {
+    filter: drop-shadow(0 0 55px #1abc9cac);
+    fill: var(--color-brand);
+}
+
+.circle-line {
+    stroke: var(--color-second);
+    stroke-width: 10;
+    fill: none;
+}
+.preloader{
+    position: relative;
+    background-color: aquamarine;
+}
+
+.preloader::before,
+.preloader::after{
+    position: absolute;
+    display: block;
+    content: "";
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.preloader::before{
+    left: 50%;
+    transform: translateX(-50%);
+    border-style: solid;
+    border-color: var(--color-second);
+    border-width: 10px;
+    background: none;
+    animation: before 1s ease-out infinite;
+}
+.preloader::after{
+    right: 0;
+    box-shadow: 0 0 55px #1abc9cac;
+    background: var(--color-brand);
+    animation: after 1s ease-out infinite;
+}
+
+@keyframes before {
+    0% {
+        transform: translateX(-50%) scale(0);
+    }
+    50% {
+        transform: translateX(-50%) scale(1.3);
+    }
+    100% {
+        transform: translateX(-50%) scale(0);
+    }
+}
+@keyframes after {
+    0%{
+        right: 0;
+        transform: translateX(0%) scale(0);
+    }
+    50% {
+        right: 50%;
+        transform: translateX(50%) scale(1);
+    }
+    100% {
+        right: 100%;
+        transform: translateX(100%) scale(0);
+    }
+}
+
+.over-x-hidden{
+overflow-x: hidden;
+}
+
+/* .avatar-frame {
+    position: relative;
+    max-width: 400px;
+    max-height: 400px;
+}
+
+.avatar-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.avatar-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.avatar-before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 150px;
+    height: 150px;
+}
+
+.avatar-after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+} */
+
+.lock {
+    user-select: none;
+    pointer-events: none;
+}
+
+.font-light-hover:hover,
+.font-light {
+    text-shadow: 0 0 21px var(--color-brand);
+}
+
+.filter-light-hover:hover,
+.filter-light {
+    filter: drop-shadow(0 0 34px #1abc9c36);
+}
+
+.frame-light-hover:hover,
+.frame-light {
+    box-shadow: 0 0 13px #1abc9c36;
+}
+
+.frame-shadow-hover:hover,
+.frame-shadow {
+    box-shadow:
+        0px 2.07px 2.21px 0px rgba(0, 0, 0, 0.04),
+        0px 4.98px 5.32px 0px rgba(0, 0, 0, 0.08),
+        0px 9.39px 10.01px 0px rgba(0, 0, 0, 0.12),
+        0px 16.75px 17.86px 0px rgba(0, 0, 0, 0.16),
+        0px 31.33px 33.42px 0px rgba(0, 0, 0, 0.2),
+        0px 75px 80px 0px rgba(0, 0, 0, 0.28);
+}
+
+.frame-gradient-hover:hover,
+.frame-gradient {
+    background-image: radial-gradient(circle at 0 0, #1abc9c3f, transparent 50%);
+}
+
+.transform-up-hover:hover,
+.transform-up {
+    transform: translateY(-8px);
+}
+
+.transform-scale-hover:hover,
+.transform-scale {
+    transform: scale(1.3);
+}
+
+.wallpaper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.wallpaper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: .13;
+    user-select: none;
+}
+
+.wallpaper .overlay {
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(var(--color-main), transparent, var(--color-main));
+}

@@ -1,0 +1,410 @@
+.speed-none{
+transition: none;
+}
+.speed-fast{
+    transition: .1s;
+}
+.speed-norm{
+    transition: .3s;
+}
+.speed-slow{
+    transition: .8s;
+}
+
+/* ! Курсор */
+
+.cursor-default {
+    cursor: default;
+}
+
+.cursor-text {
+    cursor: text;
+}
+
+.cursor-grab {
+    cursor: grab;
+}
+
+.cursor-move {
+    cursor: move;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.cursor-help {
+    cursor: help;
+}
+
+.cursor-alias {
+    cursor: alias;
+}
+
+.cursor-zoom-in {
+    cursor: zoom-in;
+}
+
+.cursor-no-drop,
+.cursor-drop-no {
+    cursor: no-drop;
+}
+
+.cursor-no-select,
+.cursor-select-no {
+    user-select: none;
+}
+
+.cursor-no-events,
+.cursor-events-no {
+    pointer-events: none;
+}
+
+.cursor-lock {
+    cursor: no-drop;
+    user-select: none;
+    pointer-events: none;
+}
+
+/* ! Текст */
+
+/* ? Выравнивание текста */
+
+.font-start,
+.font-align-start {
+    text-align: start;
+}
+
+.font-center,
+.font-align-center {
+    text-align: center;
+}
+
+.font-end,
+.font-align-end {
+    text-align: end;
+}
+
+/* ? Стиль текста */
+
+.font-style-normal-hover:hover,
+.font-style-normal {
+    font-weight: normal;
+}
+
+.font-style-italic-hover:hover,
+.font-style-italic {
+    font-style: italic;
+}
+
+.font-style-bold-hover:hover,
+.font-style-bold {
+    font-weight: 700;
+}
+
+.font-style-light-hover:hover,
+.font-style-light {
+    font-weight: 300;
+}
+
+.font-style-underline-hover:hover,
+.font-style-underline {
+    text-decoration: underline;
+}
+
+.font-style-through-hover:hover,
+.font-style-through {
+    text-decoration: line-through;
+}
+
+.font-style-dashed-hover:hover,
+.font-style-dashed {
+    text-decoration: underline;
+    text-decoration-style: dashed;
+}
+
+.font-style-dotted-hover:hover,
+.font-style-dotted {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+
+/* ? Размер текста */
+
+.font-size-xxs {
+    font-size: var(--font-xxs);
+}
+
+.font-size-xsm {
+    font-size: var(--font-xsm);
+}
+
+.font-size-smr {
+    font-size: var(--font-smr);
+}
+
+.font-size-sm {
+    font-size: var(--font-sm);
+}
+
+.font-size-md {
+    font-size: var(--font-md);
+}
+
+.font-size-lg {
+    font-size: var(--font-lg);
+}
+
+.font-size-lgr {
+    font-size: var(--font-lgr);
+}
+
+.font-size-xlg {
+    font-size: var(--font-xlg);
+}
+
+.font-size-xxl {
+    font-size: var(--font-xxl);
+}
+
+/* ? Отступ текста */
+
+.font-indent-xxs {
+    text-indent: var(--size-xxs);
+}
+
+.font-indent-xsm {
+    text-indent: var(--size-xsm);
+}
+
+.font-indent-smr {
+    text-indent: var(--size-smr);
+}
+
+.font-indent-sm {
+    text-indent: var(--size-sm);
+}
+
+.font-indent-md {
+    text-indent: var(--size-md);
+}
+
+.font-indent-lg {
+    text-indent: var(--size-lg);
+}
+
+.font-indent-lgr {
+    text-indent: var(--size-lgr);
+}
+
+.font-indent-xlg {
+    text-indent: var(--size-xlg);
+}
+
+.font-indent-xxl {
+    text-indent: var(--size-xxl);
+}
+
+/* ? Цвет текста */
+
+.font-color-accent-hover:hover,
+.font-color-accent {
+    color: var(--color-accent);
+}
+
+.font-color-contrast-hover:hover,
+.font-color-contrast {
+    color: var(--color-contrast);
+}
+
+.font-color-second-hover:hover,
+.font-color-second {
+    color: var(--color-second);
+}
+
+.font-color-main-hover:hover,
+.font-color-main {
+    color: var(--color-main);
+}
+
+.font-color-prime-hover:hover,
+.font-color-prime {
+    color: var(--color-prime);
+}
+
+.font-color-other-hover:hover,
+.font-color-other {
+    color: var(--color-other);
+}
+
+.font-color-success-hover:hover,
+.font-color-success {
+    color: var(--color-success);
+}
+
+.font-color-warning-hover:hover,
+.font-color-warning {
+    color: var(--color-warning);
+}
+
+.font-color-danger-hover:hover,
+.font-color-danger {
+    color: var(--color-danger);
+}
+
+.font-color-info-hover:hover,
+.font-color-info {
+    color: var(--color-info);
+}
+
+/* ! Фон */
+
+/* ? Цвет фона */
+
+.back-color-accent-hover:hover,
+.back-color-accent {
+    background-color: var(--color-accent);
+}
+
+.back-color-contrast-hover:hover,
+.back-color-contrast {
+    background-color: var(--color-contrast);
+}
+
+.back-color-second-hover:hover,
+.back-color-second {
+    background-color: var(--color-second);
+}
+
+.back-color-main-hover:hover,
+.back-color-main {
+    background-color: var(--color-main);
+}
+
+.back-color-prime-hover:hover,
+.back-color-prime {
+    background-color: var(--color-prime);
+}
+
+.back-color-other-hover:hover,
+.back-color-other {
+    background-color: var(--color-other);
+}
+
+.back-color-success-hover:hover,
+.back-color-success {
+    background-color: var(--color-success);
+}
+
+.back-color-warning-hover:hover,
+.back-color-warning {
+    background-color: var(--color-warning);
+}
+
+.back-color-danger-hover:hover,
+.back-color-danger {
+    background-color: var(--color-danger);
+}
+
+.back-color-info-hover:hover,
+.back-color-info {
+    background-color: var(--color-info);
+}
+
+/* ! Обводка */
+
+.bord-accent-hover:hover,
+.bord-accent {
+    border: solid 1px var(--color-accent);
+}
+
+.bord-contrast-hover:hover,
+.bord-contrast {
+    border: solid 1px var(--color-contrast);
+}
+
+.bord-second-hover:hover,
+.bord-second {
+    border: solid 1px var(--color-second);
+}
+
+.bord-main-hover:hover,
+.bord-main {
+    border: solid 1px var(--color-main);
+}
+
+.bord-prime-hover:hover,
+.bord-prime {
+    border: solid 1px var(--color-prime);
+}
+
+.bord-other-hover:hover,
+.bord-other {
+    border: solid 1px var(--color-other);
+}
+
+.bord-success-hover:hover,
+.bord-success {
+    border: solid 1px var(--color-success);
+}
+
+.bord-warning-hover:hover,
+.bord-warning {
+    border: solid 1px var(--color-warning);
+}
+
+.bord-danger-hover:hover,
+.bord-danger {
+    border: solid 1px var(--color-danger);
+}
+
+.bord-info-hover:hover,
+.bord-info {
+    border: solid 1px var(--color-info);
+}
+
+/* ? Скругление обводки */
+
+.bord-rad-min {
+    border-radius: 0;
+}
+
+.bord-rad-max {
+    border-radius: 100vmax;
+}
+
+.bord-rad-xxs {
+    border-radius: var(--size-xxs);
+}
+
+.bord-rad-xsm {
+    border-radius: var(--size-xsm);
+}
+
+.bord-rad-smr {
+    border-radius: var(--size-smr);
+}
+
+.bord-rad-sm {
+    border-radius: var(--size-sm);
+}
+
+.bord-rad-md {
+    border-radius: var(--size-md);
+}
+
+.bord-rad-lg {
+    border-radius: var(--size-lg);
+}
+
+.bord-rad-lgr {
+    border-radius: var(--size-lgr);
+}
+
+.bord-rad-xlg {
+    border-radius: var(--size-xlg);
+}
+
+.bord-rad-xxl {
+    border-radius: var(--size-xxl);
+}
