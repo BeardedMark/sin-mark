@@ -27,3 +27,7 @@ Route::get('/legal/download', function () {
 Route::get('/', function () {
     return view('pages.main');
 })->name('main');
+
+Route::get('/post/fib', function () {
+    return view('posts.fib');
+})->name('post.fib');

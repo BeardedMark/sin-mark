@@ -24,6 +24,10 @@
                             href="#tools">Инструменты</a>
                         <a class="font-color-accent font-color-accent-hover font-light-hover font-size-lg speed-norm"
                             href="#contacts">Контакты</a>
+
+                            
+                        {{-- <a class="font-color-accent font-color-accent-hover font-light-hover font-size-lg speed-norm"
+                        href="{{route('post.fib')}}">Fib</a> --}}
                     </div>
                 </div>
             </div>

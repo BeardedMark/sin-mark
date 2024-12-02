@@ -9,7 +9,7 @@
                     </div>
 
                     <div class="row g-4">
-                        <div class="col col-12 col-lg">
+                        <div class="col col-12 col-lg-3">
                             @component('pages.components.project', [
                                 'name' => 'Вебзитка',
                                 'desc' => 'Сеть интернет-визиток',
@@ -20,7 +20,7 @@
                             @endcomponent
                         </div>
 
-                        <div class="col col-12 col-lg">
+                        <div class="col col-12 col-lg-3">
                             @component('pages.components.project', [
                                 'name' => 'TecRent',
                                 'desc' => 'Аренда компьютеров и оборудования',
@@ -31,12 +31,23 @@
                             @endcomponent
                         </div>
 
-                        <div class="col col-12 col-lg">
+                        <div class="col col-12 col-lg-3">
                             @component('pages.components.project', [
                                 'name' => 'CustomPoe',
                                 'desc' => 'Инструменты для игрового комьюнити',
                                 'url' => 'custompoe.ru',
                                 'img' => asset('img/custompoe.png'),
+                                'tags' => ['PHP', 'HTML', 'CSS'],
+                            ])
+                            @endcomponent
+                        </div>
+
+                        <div class="col col-12 col-lg-3">
+                            @component('pages.components.project', [
+                                'name' => 'Phonetact',
+                                'desc' => 'Веб-сервис по работе с контактами',
+                                'url' => 'phonetact.ru',
+                                'img' => asset('img/phonetact.png'),
                                 'tags' => ['PHP', 'HTML', 'CSS'],
                             ])
                             @endcomponent
